@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @flat %>
+
+<div>
+  <%= link_to "Edit this flat", edit_flat_path(@flat) %> |
+  <%= link_to "Back to flats", flats_path %>
+
+  <%= button_to "Destroy this flat", @flat, method: :delete, style: "background-color: #ff6b6b; color: #fff; border: none; border-radius: 5px; padding: 10px 15px; font-size: 16px; cursor: pointer; transition: background-color 0.3s ease;" %>
+
+</div>

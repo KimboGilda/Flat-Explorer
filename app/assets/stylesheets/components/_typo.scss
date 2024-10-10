@@ -1,0 +1,70 @@
+// Font Import
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+// General Body Text
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #444;
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: #555;
+}
+
+// Paragraphs
+p {
+  margin-bottom: 1.2em;
+  color: #666;
+}
+
+// Links
+a {
+  color: #3498db;
+  text-decoration: none;
+
+  &:hover {
+    color: #2980b9;
+    text-decoration: underline;
+  }
+}
+
+// Utility Classes
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-muted {
+  color: #999;
+}
