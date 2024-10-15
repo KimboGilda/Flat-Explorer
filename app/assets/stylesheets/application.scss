@@ -7,8 +7,6 @@
 @import "bootstrap";
 @import "font-awesome";
 
-@import "button";
-
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
@@ -52,26 +50,6 @@ a {
 
   &:hover {
     color: #2980b9;
-  }
-}
-
-// Buttons
-button,
-.button,
-.btn {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: #2980b9;
   }
 }
 

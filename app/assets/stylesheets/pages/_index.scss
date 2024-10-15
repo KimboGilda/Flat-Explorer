@@ -1,2 +1,27 @@
-// Import page-specific CSS files here.
-@import "home";
+.btn_show {
+  padding: 0.6rem;
+  border-radius: 4px;
+  background-color: rgb(100, 155, 237);
+  color: white;
+}
+
+.btn_show:hover {
+  opacity: 0.5;
+  color: black;
+}
+
+.flat_new {
+  margin-top: 2rem;
+}
+
+.btn_new {
+  margin-top: 1rem;
+  padding: 0.6rem;
+  border-radius: 4px;
+  background-color: aquamarine;
+  color: white;
+}
+
+.map-container {
+  margin-top: 50px;
+}

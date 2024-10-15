@@ -1,18 +1,19 @@
 <div class="container">
-  <p class="notice"><%= notice %></p>
 
-  <h1>Flat Explorer 🏠</h1>
+  <h1><%= link_to "Flat Explorer 🏠", root_path, style: "text-decoration: none; color: inherit;" %></h1>
 
   <div id="flats">
     <% @flats.each do |flat| %>
       <%= render flat %>
       <p>
-        <%= link_to "Show this flat", flat, class: "button button--primary" %>
+        <%= link_to "Show this flat", flat, class: "btn_show" %>
       </p>
     <% end %>
   </div>
 
-<%= link_to "New flat", new_flat_path, style: "background-color: #8bc34a; color: #fff; border: none; border-radius: 5px; padding: 10px 15px; font-size: 16px; text-decoration: none; cursor: pointer; transition: background-color 0.3s ease;" %>
+  <div class="flat_new">
+  <%= link_to "New flat", new_flat_path, class: "btn_new" %>
+  </div>
 
   <div class="map-container"
     data-controller="map"
