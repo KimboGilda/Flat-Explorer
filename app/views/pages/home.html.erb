@@ -1,6 +1,8 @@
 <div class="container home">
   <h1>Welcome to Flat Explorer 🏠</h1>
-  <p>Check the listed appartments or add your own one.</p>
+  <p>Check the listed apartments or add your own one.</p>
 
-  <%= link_to "View Available Flats", flats_path, class: "button button--primary" %>
+  <%= link_to flats_path, class: "button button--primary" do %>
+    View The Available Flats <i class="fa-solid fa-arrow-right"></i>
+  <% end %>
 </div>

@@ -1,1 +1,57 @@
-// Specific CSS for your home-page
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e9ecef;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home {
+  background-color: #f5f7fa;
+  padding: 50px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.button--primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button--primary i {
+  margin-left: 10px;
+}
+
+.button--primary:hover {
+  background-color: #0056b3;
+}
