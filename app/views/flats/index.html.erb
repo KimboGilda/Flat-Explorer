@@ -4,7 +4,8 @@
 
   <div id="flats">
     <% @flats.each do |flat| %>
-      <%= render flat %>
+       <p><strong><%= flat.name %></strong></p>
+       <p><%= flat.address %></p>
       <p>
         <%= link_to "Show this flat", flat, class: "btn_show" %>
       </p>

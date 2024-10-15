@@ -1,3 +1,5 @@
+<div class="container">
+
 <h1>Editing flat</h1>
 
 <%= render "form", flat: @flat %>
@@ -5,6 +7,10 @@
 <br>
 
 <div>
-  <%= link_to "Show this flat", @flat %> |
-  <%= link_to "Back to flats", flats_path %>
+  <%= link_to "Show this flat", @flat, class: "btn btn_show"%> |
+  <%= link_to flats_path do %>
+    <i class="fa-solid fa-building" style="font-size: 24px;"></i>
+  <% end %>
+</div>
+
 </div>
