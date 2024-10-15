@@ -3,8 +3,12 @@
 <h2><%= @flat.name %></h2>
 
 <div>
-  <%= link_to "Edit this flat", edit_flat_path(@flat) %> |
-  <%= link_to "Back to flats", flats_path %>
+  <%= link_to edit_flat_path(@flat) do %>
+  <i class="fa-solid fa-pen-to-square"></i>
+<% end %> |
+<%= link_to flats_path do %>
+<i class="fa-solid fa-building"></i>
+<% end %>
 
   <%= button_to "Destroy this flat", @flat, method: :delete, class: "btn destroy_btn" %>
 </div>
