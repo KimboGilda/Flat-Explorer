@@ -15,8 +15,15 @@ class FlatsController < ApplicationController
     end
   end
 
-  # GET /flats/1 or /flats/1.json
   def show
+    @flat = Flat.find(params[:id])
+
+    @marker = [
+      lat: @flat.latitude,
+      lng: @flat.longitude,
+      info_window_html: render_to_string(partial: "info_window", locals: {flat: @flat}),
+      marker_html: render_to_string(partial: "marker")
+    ]
   end
 
   # GET /flats/new
@@ -24,11 +31,9 @@ class FlatsController < ApplicationController
     @flat = Flat.new
   end
 
-  # GET /flats/1/edit
   def edit
   end
 
-  # POST /flats or /flats.json
   def create
     @flat = Flat.new(flat_params)
 
